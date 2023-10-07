@@ -88,6 +88,7 @@ section.progress-container {
                 text-align: center;
                 color: inherit;
             }
+            
             .icon {
                 width: inherit;
                 height: inherit;
@@ -99,6 +100,18 @@ section.progress-container {
             color: var(--main-text);
         }
     }
+}
+
+.circle-line{
+    background-color: transparent;
+    border: 1px solid var(--progress-undone-color);
+    color: var(--progress-undone-color);
+}
+
+.circle-full{
+    background-color: var(--pg-addr-bg-color);
+    border-color: var(--pg-addr-bg-color);
+    color: var(--pg-addr-color);
 }
 
 $phase-map: (1: 'address', 2: 'shipping', 3: 'credit-card');
