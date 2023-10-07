@@ -1,4 +1,4 @@
-import RadioGroup from '../components/RadioGroup'
+import RadioGroup from '../components/RadioGroup';
 
 export default function StepTwo() {
   return (

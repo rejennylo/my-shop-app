@@ -1,5 +1,5 @@
-import { genders, cities } from '../../../data'
-import InputGroup from '../components/InputGroup'
+import { genders, cities } from '../../../data';
+import InputGroup from '../components/InputGroup';
 
 export default function StepOne() {
   return (

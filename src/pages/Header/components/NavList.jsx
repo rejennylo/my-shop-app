@@ -1,4 +1,4 @@
-import { navItems } from '../../../data'
+import { navItems } from '../../../data';
 
 export default function NavList() {
   let liNavItem = navItems.map(item => (
