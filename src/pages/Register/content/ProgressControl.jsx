@@ -8,7 +8,7 @@ export default function ProgressControl({pageIndex, handlePrev, handleNext}) {
     if( pageIndex === 0 ){
       return (
         <ButtonGroup phase='address'>
-          <Button classN='next' onClick={handleNext} text='下一步'>
+          <Button classN='next' onClick={handleNext} type='button' text='下一步'>
             <img src={rightArrow} />
           </Button>
         </ButtonGroup>
@@ -16,10 +16,10 @@ export default function ProgressControl({pageIndex, handlePrev, handleNext}) {
     }else if ( pageIndex === 1 ){
       return (
         <ButtonGroup phase='shipping'>
-          <Button classN='prev' onClick={handlePrev} text='上一步'>
+          <Button classN='prev' onClick={handlePrev} type='button' text='上一步'>
             <img src={leftArrow} />
           </Button>
-          <Button classN='next' onClick={handleNext} text='下一步'>
+          <Button classN='next' onClick={handleNext} type='button' text='下一步'>
             <img src={rightArrow} />
           </Button>
         </ButtonGroup>
@@ -27,10 +27,10 @@ export default function ProgressControl({pageIndex, handlePrev, handleNext}) {
     }else if ( pageIndex === 2 ){
       return (
         <ButtonGroup phase='credit-card'>
-          <Button classN='prev' onClick={handlePrev} text='上一步'>
+          <Button classN='prev' onClick={handlePrev} type='button' text='上一步'>
             <img src={leftArrow} />
           </Button>
-          <Button classN='next' text='確定下單'>
+          <Button classN='next' type='submit' text='確定下單'>
             <img src={rightArrow} />
           </Button>
         </ButtonGroup>
