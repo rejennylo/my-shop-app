@@ -1,9 +1,17 @@
-import { useEffect } from 'react';
-import { products } from '../../../data';
+import { useEffect, useContext } from 'react';
 import plus from '../../../assets/icons/plus.svg';
 import minus from '../../../assets/icons/minus.svg';
+import { CartContext } from '../CartContext';
 
-export default function ProductContainer({counts, handleCountMinu, handleCountAdd, handleTotalAmountChange}) {
+export default function ProductContainer() {
+  const { 
+    products,
+    counts, 
+    handleCountMinu, 
+    handleCountAdd, 
+    handleTotalAmountChange 
+  } = useContext(CartContext);
+
   // 計算單品總金額
   const calculateProductTotal = (product) =>{
     return product.price * (counts[product.id] || 0);
